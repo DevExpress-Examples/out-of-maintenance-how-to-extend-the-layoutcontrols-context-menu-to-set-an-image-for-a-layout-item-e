@@ -24,8 +24,8 @@ Namespace WindowsApplication3
 					Return
 				End If
 				If layoutItem.Image Is Nothing Then
-					e.Menu.Items.Add(CreateCustomMenuItem("&Add Image", AddressOf OnAddImage, layoutItem, My.Resources.Dock))
-				Else
+                    e.Menu.Items.Add(CreateCustomMenuItem("&Add Image", AddressOf OnAddImage, layoutItem, Global.Resources.Dock))
+                Else
 					e.Menu.Items.Add(CreateCustomMenuItem("&Remove Image", AddressOf OnRemoveImage, layoutItem, Nothing))
 				End If
 			End If
